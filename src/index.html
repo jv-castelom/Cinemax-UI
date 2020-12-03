@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>CinemaxFrontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            font-size: 24px;
+        }
+
+        body {
+            font-size: .583333rem;
+        }
+
+        .root-spinner {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url("./assets/image/Cinemax-icon.jpg");
+            width: 10rem;
+            height: 4rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(-50%, -50%);
+        }
+
+            .root-spinner span {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-size: contain;
+                animation: width 2.5s linear infinite;
+                -webkit-animation: width 2.5s linear infinite;
+                -moz-animation: width 2.5s linear infinite;
+                -ms-animation: width 2.5s linear infinite;
+                border-bottom: 4px solid #007db8;
+            }
+
+        @keyframes width {
+            0% {
+                margin-left: 0;
+                width: 0;
+            }
+
+            11% {
+                margin-left: 0;
+                width: 3.5rem;
+            }
+
+            60% {
+                margin-left: calc(100% - 3.5rem);
+                width: 3.5rem;
+            }
+
+            80%, 100% {
+                margin-left: 100%;
+                width: 0;
+            }
+        }
+
+        @-webkit-keyframes width {
+            0% {
+                margin-left: 0;
+                width: 0;
+            }
+
+            11% {
+                margin-left: 0;
+                width: 3.5rem;
+            }
+
+            60% {
+                margin-left: calc(100% - 3.5rem);
+                width: 3.5rem;
+            }
+
+            80%, 100% {
+                margin-left: 100%;
+                width: 0;
+            }
+        }
+
+        @-ms-keyframes width {
+            0% {
+                margin-left: 0;
+                width: 0;
+            }
+
+            20% {
+                margin-left: 0;
+                width: 3.5rem;
+            }
+
+            60% {
+                margin-left: calc(100% - 3.5rem);
+                width: 3.5rem;
+            }
+
+            80%, 100% {
+                margin-left: 100%;
+                width: 0;
+            }
+        }
+
+        @-moz-keyframes width {
+            0% {
+                margin-left: 0;
+                width: 0;
+            }
+
+            20% {
+                margin-left: 0;
+                width: 3.5rem;
+            }
+
+            60% {
+                margin-left: calc(100% - 3.5rem);
+                width: 3.5rem;
+            }
+
+            80%, 100% {
+                margin-left: 100%;
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <app-root>
+        <div class="root-spinner">
+            <span></span>
+        </div>
+    </app-root>
+</body>
+</html>
+
