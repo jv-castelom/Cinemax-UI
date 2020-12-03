@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {ClarityModule} from '@clr/angular';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { async } from 'rxjs/internal/scheduler/async';
+import { HeaderComponent } from './components/template/header/header.component';
 
 // tslint:disable-next-line: typedef
 export function init_app(){
@@ -20,16 +21,17 @@ function delay(ms: number){
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ClarityModule,
     AppRoutingModule
   ],
-  exports:[
-    ClarityModule
-  ],
+
   providers: [
     {provide: APP_INITIALIZER, useFactory: init_app, multi: true}
   ],

@@ -1,0 +1,23 @@
+.header{
+    background-color: black;
+}
+.header-nav{
+    padding-top: .5rem;
+}
+.header-actions{
+    padding-top: .5rem;
+}
+
+.btn{
+    color: azure;
+    border: none;
+}
+
+.header-actions.btn{
+    border: none;
+    padding-right: 10rem;
+}
+
+.header-actions{
+    padding-right: 4555;
+}

@@ -1,0 +1,66 @@
+<clr-main-container id="main-container">
+    <clr-header class="header">
+        <div class="branding">
+            <a class="nav-link">
+                <span class="clr-icon">
+                    <img src="../../../../assets/image/Cinemax.png" alt="Cinemax Logo" width="100" height="45"/>
+                </span>
+                <span class="header-logo-separator"></span>
+            </a>
+        </div>
+        <div class="header-nav" [clr-nav-level]="2">
+            <clr-dropdown>
+                <span class="dropdown-trigger-wrapper" [ngClass]="{active: activeMenu===0}">
+                    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+                        Cinema
+                        <clr-icon shape="caret down"></clr-icon>
+                    </button>
+                </span>
+                <clr-dropdown-menu *clrIfOpen>
+                    <a clrDropdownItem>Mapa de Salas</a>
+                    <a clrDropdownItem>Fale Conosco</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+            <clr-dropdown>
+                <span class="dropdown-trigger-wrapper" [ngClass]="{active: activeMenu===0}">
+                    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+                        Filmes
+                        <clr-icon shape="caret down"></clr-icon>
+                    </button>
+                </span>
+                <clr-dropdown-menu *clrIfOpen>
+                    <a clrDropdownItem>Estreias da Semana</a>
+                    <a clrDropdownItem>Em Exibição</a>
+                    <a clrDropdownItem>Em Breve</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+            <clr-dropdown>
+                <span class="dropdown-trigger-wrapper" [ngClass]="{active: activeMenu===3}">
+                    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+                        Promoções
+                        <clr-icon shape="caret down"></clr-icon>
+                    </button>
+                </span>
+                <clr-dropdown-menu *clrIfOpen>
+                    <a clrDropdownItem>Segunda Mania</a>
+                    <a clrDropdownItem>Promoção Santander</a>
+                    <a clrDropdownItem>Clube de Vantagens</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
+        <div class="header-actions">
+            <clr-dropdown>
+                <span class="dropdown-trigger-wrapper user-menu">
+                    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+                        <img src="../../../../assets/image/placehold.jpg" style="width: 24px; height: 24px;" />
+                        Usuário
+                        <clr-icon shape="caret down"></clr-icon>
+                    </button>
+                </span>
+                <clr-dropdown-menu *clrIfOpen>
+                    <a href="/api/home/logout" clrDropdownItem>Logout</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
+    </clr-header>
+</clr-main-container>
