@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { async } from 'rxjs/internal/scheduler/async';
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 
 // tslint:disable-next-line: typedef
 export function init_app(){
@@ -25,6 +26,7 @@ function delay(ms: number){
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent
   ],
 
   imports: [

@@ -1,3 +1,8 @@
 html{
     background-color: azure;
+    height: 100%;
+}
+
+body {
+    height:100%;
 }

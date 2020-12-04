@@ -1,9 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-//import { HighlightComponent } from './components/movie/highlight/highlight.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  //{path: 'home', component: HighlightComponent},
+  {path: 'home', component: HomeComponent},
 ];
 
 @NgModule({
