@@ -37,7 +37,7 @@ export class HighlightComponent implements OnInit {
         direcao: 'Cary Fukunaga',
         elenco: 'Daniel Craig, Rami Malek, Ralph Finnes',
         image: '../../../assets/movies/No_Time_to_Die.jpg',
-        sinopse: 'Bond deixou o serviço ativo e está desfrutando de uma vida tranquila na Jamaica. Sua paz não dura muito quando seu velho amigo Felix Leiter, da CIA, aparece pedindo ajuda.' 
+        sinopse: 'Bond deixou o serviço ativo e está desfrutando de uma vida tranquila na Jamaica. Sua paz não dura muito quando seu velho amigo Felix Leiter, da CIA, aparece pedindo ajuda.'
       }
     ];
     this.movie = this.movies[0];
