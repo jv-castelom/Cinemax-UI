@@ -1,0 +1,30 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-content: center;
+}
+
+.footer span{
+    color: azure;
+    padding-left: 20rem;
+    padding-bottom: .1rem;
+}
+
+.section-content{
+    z-index: 1;
+}
+
+.relative{
+    position: relative!important;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.align-center{
+    justify-content: center!important;
+}
