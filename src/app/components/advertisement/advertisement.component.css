@@ -1,0 +1,13 @@
+ngb-carousel .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  height: 80vh;
+  width: 100vw;
+  overflow: visible;
+}
+ngb-carousel .wrapper>img {
+  width: 100%;
+  height: 80%;
+}

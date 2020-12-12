@@ -9,7 +9,8 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HighlightComponent } from './components/highlight/highlight.component';
-
+import { AdvertisementComponent } from './components/advertisement/advertisement.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // tslint:disable-next-line: typedef
 export function init_app(){
   return async () => {
@@ -28,14 +29,16 @@ function delay(ms: number){
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    HighlightComponent
+    HighlightComponent,
+    AdvertisementComponent
   ],
 
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ClarityModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
 
   providers: [
